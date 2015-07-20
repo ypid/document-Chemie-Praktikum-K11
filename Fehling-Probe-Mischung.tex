@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage{auto-pst-pdf}
+
+\pagestyle{empty}
+\usepackage{pst-labo}
+\usepackage{verbatim}
+\begin{comment}
+:Title: Mischung Fehling 1 und Fehling 2
+:Author: Robin Schneider https://ypid.wordpress.com/
+\end{comment}
+
+\begin{document}
+
+\newpsstyle{klar}{linestyle=none,fillstyle=solid,fillcolor=gray!20}
+
+\newpsstyle{lightblue}{linestyle=none,fillstyle=solid,fillcolor=blue!40}
+\newpsstyle{darkblue}{linestyle=none,fillstyle=solid,fillcolor=blue!76}
+
+\begin{pspicture}(1,2.5)
+\psset{unit=0.58cm}
+\pstTubeEssais[glassType=becher,niveauLiquide1=60,aspectLiquide1=darkblue]
+\end{pspicture}
+
+\end{document}

@@ -1,0 +1,22 @@
+\documentclass{standalone}
+\usepackage{auto-pst-pdf}
+
+\pagestyle{empty}
+\usepackage{pst-labo}
+\usepackage{verbatim}
+\begin{comment}
+:Title: Ergebnis Fehling-Probe
+:Author: Robin Schneider https://ypid.wordpress.com/
+\end{comment}
+
+\begin{document}
+
+\definecolor{darkred}{rgb}{.8,.1,.3}
+\newpsstyle{darkred}{linestyle=none,fillstyle=solid,fillcolor=darkred}
+
+\begin{pspicture}(1,2.5)
+\psset{unit=0.58cm}
+\pstTubeEssais[niveauLiquide1=70,aspectLiquide1=darkred]
+\end{pspicture}
+
+\end{document}

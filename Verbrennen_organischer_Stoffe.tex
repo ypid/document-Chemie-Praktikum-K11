@@ -1,0 +1,27 @@
+\documentclass{standalone}
+\usepackage{auto-pst-pdf}
+
+\pagestyle{empty}
+\usepackage{pst-labo}
+\usepackage{verbatim}
+\begin{comment}
+:Title: Verbrennen von organischen Stoffen
+:Author: Robin Schneider https://ypid.wordpress.com/
+\end{comment}
+
+\begin{document}
+
+\newpsstyle{VerkohltMehl}{linestyle=none,fillstyle=solid,fillcolor=black!90!blue}
+
+\begin{pspicture}(1,2.5)
+\psset{unit=0.58cm}
+\rput(-0.7,0.35){\PSTBun}
+\pscircle*[linecolor=VerkohltMehl](-0.6,6.17){0.3}
+\pscircle*[linecolor=VerkohltMehl](-0.44,6.2){0.24}
+%\pscircle*[linecolor=VerkohltMehl](-0.1,6.2){0.2}
+\pscircle*[linecolor=VerkohltMehl](0.2,6.24){0.2}
+\rput(2,7.15){\PSTflamme}
+\rput(-0.1,7.75){\pstTubeEssais[niveauLiquide1=40,aspectLiquide1=VerkohltMehl,tubePenche=-60]}
+\end{pspicture}
+
+\end{document}

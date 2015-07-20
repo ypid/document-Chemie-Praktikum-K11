@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage{auto-pst-pdf}
+
+\pagestyle{empty}
+\usepackage{pst-labo}
+\usepackage{verbatim}
+\begin{comment}
+:Title: Fehling 1
+:Author: Robin Schneider https://ypid.wordpress.com/
+\end{comment}
+
+\begin{document}
+
+\newpsstyle{klar}{linestyle=none,fillstyle=solid,fillcolor=gray!20}
+
+\newpsstyle{lightblue}{linestyle=none,fillstyle=solid,fillcolor=cyan!40}
+\newpsstyle{darkblue}{linestyle=none,fillstyle=solid,fillcolor=blue!70}
+
+\begin{pspicture}(1,2.5)
+\psset{unit=0.58cm}
+\pstTubeEssais[glassType=flacon,niveauLiquide1=50,aspectLiquide1=lightblue]
+\end{pspicture}
+
+\end{document}

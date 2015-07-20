@@ -1,0 +1,28 @@
+\documentclass{standalone}
+\usepackage{auto-pst-pdf}
+
+\pagestyle{empty}
+\usepackage{pst-labo}
+\usepackage{verbatim}
+\begin{comment}
+:Title: Titelseite
+:Author: Robin Schneider https://ypid.wordpress.com/
+\end{comment}
+
+\begin{document}
+
+\newpsstyle{graulight}{linestyle=none,fillstyle=solid,fillcolor=gray!30}
+\newpsstyle{grau}{linestyle=none,fillstyle=solid,fillcolor=gray!60}
+
+\begin{pspicture}(8,6)
+ \psset{unit=0.58cm}
+\pstTubeEssais[niveauLiquide1=66,tubePenche=20,substance=\pstBullesChampagne,etiquette,Numero=5]
+\pstTubeEssais[glassType=erlen,niveauLiquide1=76,bouchon,aspectLiquide1=BilleThreeD]
+\pstTubeEssais[glassType=flacon,niveauLiquide1=80,aspectLiquide1=DiffusionBleue,bouchon,etiquette=true,Numero={\green 23}]
+\pstTubeEssais[glassType=becher,substance=\pstClouFer,aspectLiquide1=Sang]
+\pstTubeEssais[glassType=fioleJauge,niveauLiquide1=93,substance=\pstFilaments{green}]
+\pstTubeEssais[glassType=ballon,solide={\pstGrenailleZinc[9]},tubePenche=-40,pince=true,
+	aspectLiquide1=DiffusionMelange2,aspectLiquide2=aspectLiquide2,niveauLiquide1=73,niveauLiquide2=33]
+\end{pspicture}
+
+\end{document}

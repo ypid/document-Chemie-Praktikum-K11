@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{auto-pst-pdf}
+
+\pagestyle{empty}
+\usepackage{pst-labo}
+\usepackage{verbatim}
+\begin{comment}
+:Title: Lösung konzentrieren
+:Author: Robin Schneider https://ypid.wordpress.com/
+Abbildung verwendet in 1-Chemie_Protokoll-2011-01-18.pdf
+Herstellung von NaCl aus einer verunreinigten Lösung
+Verschiedene Schritte:
+	1. Sedimentieren
+	2. Dekantieren
+	3. Filtrieren
+	4. Adsorption
+	5. Eindampfen
+\end{comment}
+
+\begin{document}
+
+\newpsstyle{graulight}{linestyle=none,fillstyle=solid,fillcolor=gray!30}
+\newpsstyle{graulightn}{linestyle=none,fillstyle=solid,fillcolor=gray!15}
+\newpsstyle{graulightnn}{linestyle=none,fillstyle=solid,fillcolor=gray!12}
+\newpsstyle{weiß}{linestyle=none,fillstyle=solid,fillcolor=white}
+\newpsstyle{DiffusionBleueN}{fillstyle=gradient,gradmidpoint=0,linestyle=none,
+gradbegin=blue!25,gradend=white}
+
+\newpsstyle{grau}{linestyle=none,fillstyle=solid,fillcolor=gray!60}
+\begin{pspicture}(1,2.5)
+\psset{unit=0.58cm}
+\pstTubeEssais[glassType=becher,niveauLiquide1=70,solide={\pstGrenailleZinc[50]}
+,aspectLiquide1=graulight]
+\rput(1,-1){\parbox{4cm}{\raggedright Nach 1.}}
+%\pstTubeEssais[glassType=becher,niveauLiquide1=70,solide={\pstGrenailleZinc[40]},aspectLiquide1=graulight]
+\pstTubeEssais[aspectLiquide1=graulight]
+\rput(1,-1){\parbox{4cm}{\raggedright Nach 2.}}
+\pstEntonnoir[aspectLiquide1=graulightn]
+\rput(0.7,-1){\parbox{4cm}{\raggedright Nach 3.}}
+\pstEntonnoir[aspectLiquide1=graulightnn]
+\rput(0.7,-1){\parbox{4cm}{\raggedright Nach 4.}}
+%\pstTubeEssais[aspectLiquide1=weiß,substance={\pstBullesChampagne[25]},pince=true]
+\pstTubeEssais[aspectLiquide1=DiffusionBleueN,pince=true]
+\rput(1.2,-1){\parbox{4cm}{\raggedright Nach 5.}}
+\end{pspicture}
+
+\end{document}
