@@ -8,6 +8,6 @@ I have added some commands to the package pst-labo.
 You can invoke this two diff commands to have a look. The current files from texlive are maybe somewhere else located on your machine.
 
 ```Shell
-diff pst-labo/pst-labo.tex /usr/local/texlive/current/texmf-dist/tex/generic/pst-labo/pst-labo.tex
-diff pst-labo/pst-laboObj.tex /usr/local/texlive/current/texmf-dist/tex/generic/pst-labo/pst-laboObj.tex
+diff pst-labo/pst-labo.tex $(kpsewhich pst-labo.tex)
+diff pst-labo/pst-laboObj.tex $(kpsewhich pst-laboObj.tex)
 ```
